@@ -1,0 +1,13 @@
+.primary-content__progress {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .primary-content__progress {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+}

@@ -1,0 +1,49 @@
+$blue: #3d85c6;
+$red: #f44336;
+$purple: #674ea7;
+$orange: #ff6600;
+
+.progress__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats__progress-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.progress-bar__lable {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.progress-bar__progress-bar-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 0.5em;
+    width: 75%;
+}
+
+.progress-bar-container__filler_blue {
+    background-color: $blue;
+}
+
+.progress-bar-container__filler_red {
+    background-color: $red;
+}
+
+.progress-bar-container__filler_purple {
+    background-color: $purple;
+}
+
+.progress-bar-container__filler_orange {
+    background-color: $orange;
+}

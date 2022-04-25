@@ -1,0 +1,63 @@
+.progress__tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.tasks__item {
+    border-radius: 5px;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 70%;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 5px 4px 8px 2px #087341;
+    }
+    p {
+        display: inline;
+    }
+}
+
+.tasks__item_completed {
+    @extend .tasks__item;
+    text-decoration: line-through;
+}
+
+.item_workCycle {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    height: 100%;
+    width: 30px;
+}
+
+.tasks__delete-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid red;
+    color: red;
+    border-radius: 5px;
+    height: 10%;
+    width: 70%;
+}
+
+.tasks__delete-zone_hovered {
+    @extend .tasks__delete-zone;
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .tasks__item {
+        font-size: 16px;
+    }
+}

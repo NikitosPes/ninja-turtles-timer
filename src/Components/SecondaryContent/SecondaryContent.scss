@@ -1,0 +1,105 @@
+$blue: #3d85c6;
+$red: #f44336;
+$purple: #674ea7;
+$orange: #ff6600;
+
+.secondary-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #285a87;
+    height: 100vh;
+    width: 100%;
+    h1 {
+        margin-left: 10px;
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+        margin-bottom: 50px;
+    }
+}
+
+.description__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: .5s;
+    width: 100%;
+}
+
+.description__container.active {
+    text-align: left;
+}
+
+.description-block__content {
+    display: flex;
+    visibility: hidden;
+}
+
+.description-block__content.active {
+    
+    visibility: visible;
+    transition: 1s;
+}
+
+.secondary-content__description-block {
+    margin: 0 10px 0 10px;
+}
+
+.description-block__title {
+    font-size: 30px;
+    margin: 0;
+    transition: .7s;
+}
+
+.description-block__title.leonardo:hover {
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 
+        2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, -40px -40px 0px rgba(9,32,255,0);
+    cursor: pointer;
+}
+
+.description-block__title.michelangelo:hover {
+    color: $orange;
+    text-shadow: 3px 2px 1px #13B7FF;
+    cursor: pointer;
+}
+
+.description-block__title.raphael:hover {
+    text-shadow: 2px 2px 2px #CE0000;
+    cursor: pointer;
+}
+
+.description-block__title.donatello:hover {
+    color: $purple;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, 
+        #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 0px 0px 0px rgba(206,89,55,0.25);
+    cursor: pointer;
+}
+
+.content__description {
+    text-align: left;
+    height: 1px;
+    transform: scale(0.1);
+    transition: 1s;
+}
+
+.content__description.active {
+    height: 100%;
+    transform: scale(1);
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.contnet__img {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.contnet__img.active {
+    border-radius: 15px;
+    height: 100px;
+    width: 150px;
+    opacity: 1;
+}
